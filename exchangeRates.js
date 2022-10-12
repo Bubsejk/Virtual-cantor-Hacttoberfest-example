@@ -1,3 +1,4 @@
+//exchange rates
 var exchangeRates = [
     ["EUR (€)", 4.8000, 4.8800],
     ["GBP (£)", 5.4400, 5.5400],
@@ -16,3 +17,14 @@ function insRow(currency, buy, sell)
     c2.innerHTML=buy;
     c3.innerHTML=sell;
 };
+
+
+//dynamicly show currencies values when user change value in 'number' input
+const selectElement = document.getElementById('number');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.getElementById('dynamicCurrencyChange');
+  var currenciesText = '';
+  exchangeRates.forEach((exchangeRate) => { currenciesText += ((exchangeRate[1]*event.target.value).toFixed(2) + ' ' + exchangeRate[0] + '\n') });
+  result.textContent = currenciesText;
+});

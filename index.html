@@ -4,14 +4,6 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Virtual cantor</title>
     <script src="exchangeRates.js" defer></script>
-    <script>
-        function counts() {
-            number = document.getElementById("number").value;
-            document.getElementById("outvalue1").innerHTML = number * 1.8;
-            document.getElementById("outvalue2").innerHTML = number * 1.4;
-            document.getElementById("outvalue3").innerHTML = number * 1.2;
-        };
-    </script>
 </head>
 <body>
     <table id="exchangeRatesTable">
@@ -23,14 +15,9 @@
     </table>
     <br /><br /><br />
     <form>
-        <label>Select Country</label> <br />
-        <label>Value</label> <br />
-        US <input type="number" id= "number" name="number" /> 
-        <input type="button" id= "count" value="Count" onclick="counts()" /> <br />
-        PL = <b id="outvalue1"></b> <br />
-        ENG = <b id="outvalue2"></b> <br />
-        EU = <b id="outvalue3"></b> <br />
+        <label>Buy currency</label> <br />
+        PLN: <input type="number" id= "number" name="number" /> 
+        <div id="dynamicCurrencyChange" style="white-space:pre-wrap;"></div>
     </form>
-    
 </body>
 </html>
