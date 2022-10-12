@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Virtual cantor</title>
+    <script>
+        function counts() {
+        number = document.getElementById("number").value;
+        document.getElementById("outvalue1").innerHTML = number * 1.8;
+        document.getElementById("outvalue2").innerHTML = number * 1.4;
+        document.getElementById("outvalue3").innerHTML = number * 1.2;
+        };
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Poland</th>
+            <th>England</th>
+            <th>Europe</th>
+        </tr>
+        <tr>
+            <th>1$ = 1,8zł </th>
+            <th>1$ = 1,4£ </th>
+            <th>1$ = 1,2€ </th>
+        </tr>
+    </table>
+    <form>
+        <label>Select Country</label> <br />
+        <label>Value</label> <br />
+        US <input type="number" id= "number" name="number" /> 
+        <input type="button" id= "count" value="Count" onclick="counts()" /> <br />
+        PL = <b id="outvalue1"></b> <br />
+        ENG = <b id="outvalue2"></b> <br />
+        EU = <b id="outvalue3"></b> <br />
+    </form>
+    
+</body>
+</html>
