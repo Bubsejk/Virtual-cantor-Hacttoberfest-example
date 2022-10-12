@@ -3,28 +3,25 @@
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Virtual cantor</title>
+    <script src="exchangeRates.js" defer></script>
     <script>
         function counts() {
-        number = document.getElementById("number").value;
-        document.getElementById("outvalue1").innerHTML = number * 1.8;
-        document.getElementById("outvalue2").innerHTML = number * 1.4;
-        document.getElementById("outvalue3").innerHTML = number * 1.2;
+            number = document.getElementById("number").value;
+            document.getElementById("outvalue1").innerHTML = number * 1.8;
+            document.getElementById("outvalue2").innerHTML = number * 1.4;
+            document.getElementById("outvalue3").innerHTML = number * 1.2;
         };
     </script>
 </head>
 <body>
-    <table>
+    <table id="exchangeRatesTable">
         <tr>
-            <th>Poland</th>
-            <th>England</th>
-            <th>Europe</th>
-        </tr>
-        <tr>
-            <th>1$ = 1,8zł </th>
-            <th>1$ = 1,4£ </th>
-            <th>1$ = 1,2€ </th>
+            <th>Currency</th>
+            <th>Buy price</th>
+            <th>Sell price</th>
         </tr>
     </table>
+    <br /><br /><br />
     <form>
         <label>Select Country</label> <br />
         <label>Value</label> <br />
