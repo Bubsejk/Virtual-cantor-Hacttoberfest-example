@@ -1,5 +1,4 @@
 # Virtual cantor (Hacktoberfest task)
-My web application written in .NET Core makes it easy and quick to solve the logic puzzles that are magic squares.
 
 ##### Languages used:
 HTML, CSS, JavaScript
