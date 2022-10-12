@@ -1,0 +1,65 @@
+#dynamicCurrencyChange
+{
+    white-space:pre-wrap;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+form {
+    text-align: center;
+    font-size: larger;
+}
+
+label {
+    font-weight: bold;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+  
+table tr {
+    background-color: hsl(205, 59%, 76%);
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+  
+table th, table td {
+    padding: .625em;
+    text-align: center;
+}
+  
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+
+
+body {
+    background: linear-gradient(-45deg, #e06945, #eb357b, #1ca6d8, #2ddab1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
